@@ -54,7 +54,7 @@ describe("the narrow-text-area class", () => {
       return style.getPropertyValue("margin");
     });
 
-    expect(autoMargins).toMatch(/0px \d{2,3}px/); // Updated regex for flexibility
+    expect(autoMargins).toEqual("0px auto");
   });
 
   it("should be outlined with an orange border", async () => {
